@@ -1,6 +1,9 @@
-## 0.40 - 03/28/2021
-###  *  Initial Github commit of Reno addon files.
+## 0.41 - 03/28/2021
+###  *  Bump to prompt package build back at Curse.
 
+
+##### 0.40 :
+  *  Initial Github commit of Reno addon files.
 
 ##### 0.39 :
   *  Tag to prompt rebuild after contact w/ Overwolf support
@@ -33,6 +36,7 @@
 
 ##### 0.33 :
 - 0.33 update, testing creation of the markdown changelog file.
+
 
 
 

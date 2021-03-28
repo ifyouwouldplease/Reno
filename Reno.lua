@@ -38,6 +38,7 @@
 -- 0.38 -- Bump interface for 1.13.6 Classic, refresh libs
 -- 0.39 -- Tag to prompt package build after contact w/ Overwolf, refresh libs
 -- 0.40 -- Migrate to Github from Curse Subversion
+-- 0.41 -- Bump to prompt package build back at Curse
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
