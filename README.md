@@ -53,7 +53,7 @@ Note that what option would be enabled is highly situational, but still can be c
 - Reno does no checking to verify the options that you provide are valid WoW macro options.
 
 ### FAQ:
-#####*What would I use this for?*
+##### *What would I use this for?*
 - Reno permits you to have macros with multiple spells defined and, at the start of the raid or between combats, change which of those spells is active on the simple click of the bound key or action button.
 
 ##### *Why wouldn't I use modifier keys for this purpose?*
