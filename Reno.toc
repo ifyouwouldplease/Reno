@@ -1,7 +1,7 @@
-## Interface: 11306
+## Interface: 11307
 ## Title: Reno
 ## Author: Tuill of Pagle
-## Version: 0.41
+## Version: 0.42
 ## Notes: Reno is a slash-command that can patch predefined options in a macro to change which abilities will be chosen.
 
 embeds.xml
