@@ -1,6 +1,9 @@
-## 0.42 - 05/09/2021
-###  *  Bump interface for 1.13.7 TBC Classic pre-pre-patch, refresh libs
+## 0.42 - 05/20/2021
+###  *  Interface for BC
 
+
+##### 0.42 :
+  *  Bump interface for 1.13.7 TBC Classic pre-pre-patch, refresh libs
 
 ##### 0.41 :
   *  Bump to prompt package build back at Curse.
@@ -39,6 +42,7 @@
 
 ##### 0.33 :
 - 0.33 update, testing creation of the markdown changelog file.
+
 
 
 
