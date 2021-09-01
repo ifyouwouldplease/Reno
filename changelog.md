@@ -1,6 +1,9 @@
-## 0.42 - 05/20/2021
-###  *  Interface for BC
+## 0.43 - 08/31/2021
+###  *  Bump interface for 2.5.2, refresh libs
 
+
+##### 0.42 :
+  *  Interface for BC
 
 ##### 0.42 :
   *  Bump interface for 1.13.7 TBC Classic pre-pre-patch, refresh libs
@@ -42,6 +45,7 @@
 
 ##### 0.33 :
 - 0.33 update, testing creation of the markdown changelog file.
+
 
 
 

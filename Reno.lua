@@ -40,6 +40,7 @@
 -- 0.40 -- Migrate to Github from Curse Subversion
 -- 0.41 -- Bump to prompt package build back at Curse
 -- 0.42 -- Bump interface for 1.13.7 TBC Classic pre-pre-patch, refresh libs
+-- 0.43 -- Bump interface for 2.5.2, refresh libs
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
