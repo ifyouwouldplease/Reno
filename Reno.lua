@@ -43,6 +43,7 @@
 -- 0.43 -- Bump interface for 2.5.2, refresh libs
 -- 0.44 -- Bump interface for 2.5.3, refresh libs
 -- 0.45 -- Bump interface for 2.5.4, refresh libs
+-- 0.46 -- Bump interface for 3.4.1, refresh libs
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
