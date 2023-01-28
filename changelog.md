@@ -1,6 +1,9 @@
-## 0.45 - 01/19/2023
-###  *  Bump interface for 3.4.1, refresh libs
+## 0.46 - 01/28/2023
+###  *  No distribution build, update copyright year in license file, changes to commit script version grabber.
 
+
+##### 0.46 :
+  *  Bump interface for 3.4.1, refresh libs
 
 ##### 0.45 :
   *  Bump interface for 2.5.4, refresh libs
@@ -54,6 +57,7 @@
 
 ##### 0.33 :
 - 0.33 update, testing creation of the markdown changelog file.
+
 
 
 
