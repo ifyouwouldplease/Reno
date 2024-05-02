@@ -1,6 +1,9 @@
-## 0.48 - 11/16/2023
-###  *  Bump interface for 1.15.0 classic, 3.4.3 wrath classic, refresh libs, re-add .pkgmeta to troubleshoot Curse changelog
+## 0.49 - 05/01/2024
+###  *  Initial release for Cata Classic, refresh libs.
 
+
+##### 0.48 :
+  *  Bump interface for 1.15.0 classic, 3.4.3 wrath classic, refresh libs, re-add .pkgmeta to troubleshoot Curse changelog
 
 ##### 0.47 :
   *  Bump interface for 1.14.4 classic, 3.4.3 wrath classic, refresh libs
@@ -63,6 +66,7 @@
 
 ##### 0.33 :
 - 0.33 update, testing creation of the markdown changelog file.
+
 
 
 
