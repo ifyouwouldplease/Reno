@@ -49,6 +49,7 @@
 -- 0.48 -- Bump interface for 1.15.0 classic, 3.4.3 wrath classic, refresh libs, re-add .pkgmeta to troubleshoot Curse changelog
 -- 0.49 -- Initial release for Cata Classic, refresh libs. UPDATE - Bump interface for Classic-Classic. UPDATE - Bump again 1.15.4.
 -- 0.50 -- Bump interface, refresh libs for Classic-Classic.
+-- 0.51 -- Bump interface, refresh libs for Classic-Anniversary.
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
