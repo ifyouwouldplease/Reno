@@ -1,4 +1,4 @@
-## Interface: 11508
+## Interface: 50500
 ## Title: Reno
 ## Author: Tuill of Pagle
 ## Version: 0.53

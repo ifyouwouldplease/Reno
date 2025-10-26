@@ -51,6 +51,7 @@
 -- 0.50 -- Bump interface, refresh libs for Classic-Classic.
 -- 0.51 -- Bump interface, refresh libs for Classic-Anniversary.
 -- 0.52 -- Bump interface, refresh libs for Classic-Anniversary.
+-- 0.53 -- Changes in API to read addon metadata, bump interfaces, refresh libs
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
@@ -65,6 +66,14 @@ local strlower = strlower
 local tonumber = tonumber
 local string_gsub = string.gsub
 local table_insert = table.insert
+
+-- Accommodate changes in API
+local GetAddOnMetadata = GetAddOnMetadata or (C_AddOns and C_AddOns.GetAddOnMetadata)
+local GetNumAddOns = GetNumAddOns or (C_AddOns and C_AddOns.GetNumAddOns)
+local IsAddOnLoaded = IsAddOnLoaded or (C_AddOns and C_AddOns.IsAddOnLoaded)
+local IsAddOnLoadOnDemand = IsAddOnLoadOnDemand or (C_AddOns and C_AddOns.IsAddOnLoadOnDemand)
+local GetAddOnInfo = GetAddOnInfo or (C_AddOns and C_AddOns.GetAddOnInfo)
+local GetAddOnDependencies = GetAddOnDependencies or (C_AddOns and C_AddOns.GetAddOnDependencies)
 
 -- Fetch version & notes from TOC file
 local ourVersion = GetAddOnMetadata("Reno", "Version")
@@ -274,10 +283,11 @@ function ourAddon:SlashHandler(input)
     if InCombatLockdown() then
 	  self:Print("In combat, declining to show Reno help dialog.")
 	else
+	  Settings.OpenToCategory("Reno")
 	  -- Cheeseball fix for issue that 1st call to display Interface > Reno
 	  -- frame only showing ESC > Interface menu, so call twice-in-a-row
-	  InterfaceOptionsFrame_OpenToCategory(self.optionsFrames.general)
-	  InterfaceOptionsFrame_OpenToCategory(self.optionsFrames.general)
+	  --InterfaceOptionsFrame_OpenToCategory(self.optionsFrames.general)
+	  --InterfaceOptionsFrame_OpenToCategory(self.optionsFrames.general)
 	end
   else
     self:RenoHandler(input)
