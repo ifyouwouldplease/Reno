@@ -52,6 +52,7 @@
 -- 0.51 -- Bump interface, refresh libs for Classic-Anniversary.
 -- 0.52 -- Bump interface, refresh libs for Classic-Anniversary.
 -- 0.53 -- Changes in API to read addon metadata, bump interfaces, refresh libs
+-- 0.54 -- Bump interface, refresh libs for TBC-Anniversary.
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
