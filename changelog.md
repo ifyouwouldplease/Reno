@@ -1,6 +1,9 @@
-## 0.54 - 06/14/2026
+## 0.55 - 07/07/2026
 ###  *  Bump interface, refresh libs for TBC-Anniversary.
 
+
+##### 0.54 :
+  *  Bump interface, refresh libs for TBC-Anniversary.
 
 ##### 0.53 :
   *  Changes in API to read addon metadata, bump interfaces, refresh libs
@@ -90,6 +93,7 @@
 
 ##### 0.33 :
 - 0.33 update, testing creation of the markdown changelog file.
+
 
 
 
