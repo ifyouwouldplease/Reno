@@ -1,6 +1,9 @@
-## 0.55 - 07/07/2026
-###  *  Bump interface, refresh libs for TBC-Anniversary.
+## 0.56 - 08/18/2026
+###  *  Add IconTexture & Category, bump interface, refresh libs for TBC-Anniversary.
 
+
+##### 0.55 :
+  *  Bump interface, refresh libs for TBC-Anniversary.
 
 ##### 0.54 :
   *  Bump interface, refresh libs for TBC-Anniversary.
@@ -93,6 +96,7 @@
 
 ##### 0.33 :
 - 0.33 update, testing creation of the markdown changelog file.
+
 
 
 

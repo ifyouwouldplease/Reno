@@ -1,5 +1,5 @@
 -- Reno - Macro Option Toggler
--- Tuill of Pagle
+-- Tuill of Duskwood/Greymane/Pagle/Dreamscythe
 -- Revisions:
 -- 0.10 - Initial version, copy of Mutt (by Tuill) source
 -- 0.11 - Update interface for 3.3 and refresh libs
@@ -54,6 +54,7 @@
 -- 0.53 -- Changes in API to read addon metadata, bump interfaces, refresh libs
 -- 0.54 -- Bump interface, refresh libs for TBC-Anniversary.
 -- 0.55 -- Bump interface, refresh libs for TBC-Anniversary.
+-- 0.56 -- Add IconTexture & Category, bump interface, refresh libs for TBC-Anniversary.
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
