@@ -55,6 +55,7 @@
 -- 0.54 -- Bump interface, refresh libs for TBC-Anniversary.
 -- 0.55 -- Bump interface, refresh libs for TBC-Anniversary.
 -- 0.56 -- Add IconTexture & Category, bump interface, refresh libs for TBC-Anniversary.
+-- 0.57 - Change to use global name for help static popup, refresh libs
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
@@ -178,16 +179,16 @@ ourAddon.renoExampleText = [[
 ]]
 
 StaticPopupDialogs["RENO_EXAMPLE"] = {
-  text = "Example Macro:",
+  text = 'Example - Update macro named "pcurse"',
   button1 = "OK",
   OnShow = function (self, data)
-    self.editBox:SetMultiLine(true)
-	self.editBox:SetHeight(150)
-	--self.editBox:GetParent():SetBackdrop(nil) -- Works for entire Dialog
-	self.editBox:DisableDrawLayer("BACKGROUND")
-    self.editBox:SetText(ourAddon.renoExampleText)
-	self.editBox:HighlightText()
-	self:Show()
+    local ourEdit = _G[self:GetName() .. "EditBox"]
+    ourEdit:SetMultiLine(true)
+    ourEdit:SetHeight(90)
+    ourEdit:DisableDrawLayer("BACKGROUND")
+    ourEdit:SetText(ourAddon.renoExampleText)
+    ourEdit:HighlightText()
+    self:Show()
   end,
   hasEditBox = true,
   hasWideEditBox = true,
