@@ -56,6 +56,7 @@
 -- 0.55 -- Bump interface, refresh libs for TBC-Anniversary.
 -- 0.56 -- Add IconTexture & Category, bump interface, refresh libs for TBC-Anniversary.
 -- 0.57 - Change to use global name for help static popup, refresh libs
+-- 0.58 - Fold TOCs back into single w/ multiple Interface, update interface for multiple expansions, fix howto open.
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
@@ -204,6 +205,12 @@ StaticPopupDialogs["RENO_EXAMPLE"] = {
 -- Taking advantage of this in case we decide to dynamically adjust
 -- at use-time
 local function ourOptions()
+  local function showExample()
+    local ourPopup = StaticPopup_Show("RENO_EXAMPLE")
+	if ourPopup then
+	  ourPopup:SetHeight(230)
+	end
+  end
   local options = {
    name = "Reno",
    type = 'group',
@@ -240,7 +247,8 @@ local function ourOptions()
 						name = "Show Example Macro",
 						desc = "",
 						descStyle = "inline",
-						func = function() StaticPopup_Show("RENO_EXAMPLE") end,
+						--func = function() StaticPopup_Show("RENO_EXAMPLE") end,
+						func = showExample,
 					},
 					about =
 					{
@@ -273,7 +281,7 @@ function ourAddon:OnInitialize()
 	ourConfig:RegisterOptionsTable("Reno", ourOptions)
 
 	self.optionsFrames = {}
-	self.optionsFrames.general = ourConfigDialog:AddToBlizOptions("Reno", "Reno", nil, "general")
+	self.optionsFrames.general, self.optionsFrames.categoryID = ourConfigDialog:AddToBlizOptions("Reno", "Reno", nil, "general")
 
 	-- Create slash commands
 	self:RegisterChatCommand("reno", "SlashHandler")
@@ -287,7 +295,7 @@ function ourAddon:SlashHandler(input)
     if InCombatLockdown() then
 	  self:Print("In combat, declining to show Reno help dialog.")
 	else
-	  Settings.OpenToCategory("Reno")
+	  Settings.OpenToCategory(self.optionsFrames.categoryID)
 	  -- Cheeseball fix for issue that 1st call to display Interface > Reno
 	  -- frame only showing ESC > Interface menu, so call twice-in-a-row
 	  --InterfaceOptionsFrame_OpenToCategory(self.optionsFrames.general)
