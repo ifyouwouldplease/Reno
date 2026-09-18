@@ -1,7 +1,7 @@
-## Interface: 120100, 50504, 20506, 11509
+## Interface: 120100, 50504, 20506, 16001, 11509
 ## Title: Reno
 ## Author: Tuill of Duskwood/Greymane/Pagle/Dreamscythe
-## Version: 0.58
+## Version: 0.59
 ## IconTexture: Interface\Icons\inv_holiday_beerfestpretzel01.blp
 ## Category: Macros
 ## Notes: Reno is a slash-command that can patch predefined options in a macro to change which abilities will be chosen.

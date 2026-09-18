@@ -57,6 +57,7 @@
 -- 0.56 -- Add IconTexture & Category, bump interface, refresh libs for TBC-Anniversary.
 -- 0.57 - Change to use global name for help static popup, refresh libs
 -- 0.58 - Fold TOCs back into single w/ multiple Interface, update interface for multiple expansions, fix howto open.
+-- 0.59 - Add Forever interface to TOC, refresh libs.
 
 -- All comments by Tuill
 -- I recommend a Lua-aware editor like SciTE that provides syntactic highlighting.
